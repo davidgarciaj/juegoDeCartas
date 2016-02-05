@@ -41,7 +41,7 @@ public class Jugador
     public void cartasQueTieneEnLaMano()
     {
         for (Carta carta : cartas){
-            System.out.println(carta.getNombre);
+            System.out.println(carta.getNombre());
         }
     }
 }
