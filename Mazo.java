@@ -21,10 +21,10 @@ public class Mazo
         int carta = 1;
         int numPalo = 1;
         String palo = "picas";
-        while(carta < 14 && numPalo < 5){
+        while( numPalo < 5){
             cartas.add(new Carta(carta, palo));
             if(carta == 13){
-                carta = 1;
+                carta = 0;
                 numPalo++; 
                 if(numPalo == 2){
                     palo = "treboles";
