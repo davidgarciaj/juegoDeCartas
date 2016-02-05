@@ -26,7 +26,14 @@ public class Carta
      */
     public String getNombre()
     {
-        return "El " + valor + " de " + palo;
+        String numCarta = "El " + valor;
+        if(valor > 10){
+            if(valor == 11){numCarta = "La J";}
+            else if(valor == 12){numCarta = "La Q";}
+            else{numCarta = "La K";}
+        }
+        else if(valor == 1){numCarta = "El As";}
+        return numCarta + " de " + palo;
     }
     
     /**
