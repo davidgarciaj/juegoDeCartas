@@ -53,8 +53,11 @@ public class Mazo
      * En caso de que no queden cartas en el mazo devuelve null.
      */
     public Carta tomarPrimera(){
-        Carta primeraCarta = cartas.get(0);
-        cartas.remove(0);
+        Carta primeraCarta = null;
+        if(cartas.size() != 0){
+            primeraCarta = cartas.get(0);
+            cartas.remove(0);
+        }
         return primeraCarta;
     }
     
