@@ -41,7 +41,7 @@ public class Jugador
      */
     public void cartasQueTieneEnLaMano()
     {
-        if (cartas != null){
+        if (cartas.size() != 0){
             for (Carta carta : cartas){
                 System.out.println(carta.getNombre());
             }
