@@ -39,9 +39,9 @@ public class Juego
     {
         int cont = 1;
         mazo.barajar();
-        while(mazo.quedan() > jugadores.size() || cont <= jugadores.size()){
+        while(mazo.quedan() >= (jugadores.size()- (cont-1))){
             jugadores.get(cont - 1).recibirCarta(mazo.tomarPrimera());
-            if (cont == jugadores.size() && mazo.quedan() > jugadores.size()){
+            if (cont == jugadores.size()){
                 cont = 0;
             }
             cont++;
